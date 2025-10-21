@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConfigGuardian – IAM Policy Scanner</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <h1>🛡️ ConfigGuardian</h1>
+    <p>
+      Scan AWS IAM policies for risky permissions, all processing done locally
+      in your browser, nothing uploaded.
+    </p>
+
+    <textarea
+      id="policyInput"
+      placeholder="Paste IAM JSON policy here..."
+      rows="14"
+    ></textarea>
+    <br />
+    <button id="scanBtn">Scan Policy</button>
+    <div id="results"></div>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
